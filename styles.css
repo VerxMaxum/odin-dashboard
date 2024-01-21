@@ -188,11 +188,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     padding: 0 2rem;
-}
-
-#announcements,
-#trend {
-    display: grid;
+    row-gap: 1rem;
 }
 
 #announcement-label,
@@ -207,7 +203,9 @@ body {
     padding: 0 1rem;
 }
 
-#announcements {
+#announcements,
+#trend {
+    display: grid;
     box-shadow: 0 2px 5px gray;
     border-radius: 10px;
     padding: 0 1rem 0.5rem 1rem;
@@ -227,6 +225,43 @@ body {
 }
 
 #announcement-content {
+    color: gray;
+}
+
+#trend {
+    padding-top: 0.8rem;
+}
+
+.trend .picture img {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+#trend-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 0.5rem;
+}
+
+.trend {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.trend:not(.trend:nth-child(4)) {
+    padding-top: 0.5rem;
+}
+
+.trend > .picture {
+    justify-self: center;
+}
+
+.details > .identification {
+    font-weight: 600;
+}
+
+.details > .name {
     color: gray;
 }
 
