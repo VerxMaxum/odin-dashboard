@@ -131,3 +131,49 @@ body {
     color: white;
     padding: 0.5rem 1.5rem;
 }
+
+#main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-left: 4rem;
+}
+
+#cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(225px, 1fr));
+    height: 100%;
+    gap: 1.5rem;
+}
+
+.cards {
+    border: none;
+    border-left: 10px rgb(3, 110, 96) solid;
+    border-radius: 8px;
+    box-shadow: 2px 2px gray;
+    padding: 0 1rem 1rem 1rem;
+    display: grid;
+    grid-template-rows: 2fr 2fr 3fr;
+}
+
+.card-title {
+    font-weight: 800;
+    align-self: center;
+}
+
+.card-content {
+    color: gray;
+
+}
+
+.card-actions {
+    justify-self: end;
+    align-self: end;
+    display: flex;
+    gap: 1rem;
+}
+
+.card-actions > img {
+    width: 2rem;
+    height: 2rem;
+}
